@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#section-box{
+  @media (min-width: 768px) { 
+    width: 49%;
+   }
+}
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +36,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
