@@ -9,7 +9,7 @@ import { IoPersonOutline } from "react-icons/io5";
 
 
 export default function Navbar() {
-    return <div>
+    return <div className="dark:text-white">
 
         {/* NAVBAR */}
         <nav className="flex w-full px-8 py-7 items-center">
@@ -29,7 +29,7 @@ export default function Navbar() {
             {/* SEARCH BAR */}
             <div className="border w-7/12 rounded-full text-black dark:text-white px-5 py-2 flex items-center gap-4 hover:border-black dark:hover:border-white">
             <BiSearch size={24} className="text-gray-800"/>
-            <input type="text" placeholder="Search for..." />
+            <input type="text" placeholder="Search for..." className="bg-transparent" />
             </div>
 
             {/* BUTTONS */}
@@ -65,7 +65,7 @@ export default function Navbar() {
                     <FaChevronDown  className="relative transition-all group-hover:rotate-180"/>
 
                     {/* Dropdown */}
-                    <div className="hidden group-hover:flex gap-28 absolute border top-10 -left-8 transition-all bg-white w-screen py-10">
+                    <div className="hidden group-hover:flex gap-28 absolute border top-8 -left-8 transition-all bg-white w-screen py-10 dark:bg-slate-800">
                         <div className="flex flex-col px-8 gap-2">
                             <Link href={"#"} className="hover:underline font-semibold mb-3">Pantry</Link>
                             <Link href={"#"} className="hover:underline font-light">All</Link>

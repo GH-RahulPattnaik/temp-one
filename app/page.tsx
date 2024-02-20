@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Footer from "@/components/Footer";
-import Navbar from "@/components/navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { FaMinus, FaPlus, FaRegUserCircle } from "react-icons/fa";
@@ -13,12 +11,10 @@ export default function Home() {
   //   '/image02.png',
   // ];
   return (
-    <div>
-      <Navbar />
-
+    <div className="dark:text-white">
       {/* Section - 1  */}
       {/* <div className="container mx-auto"><AutoSwipeImages images={images} /></div> */}
-      <section className="md:h-full h-lvh w-full relative -z-0 flex flex-col justify-center items-center">
+      <section className="md:h-full h-lvh w-full relative -z-0 flex flex-col justify-center items-center dark:text-black">
         <img src="/s1/image01.png" alt="image 01" className="w-full md:h-full h-lvh" />
         <div className="flex flex-col items-center justify-center gap-10 absolute z-0 top-40">
           <h6 className="text-center">Only Non-GMO</h6>
@@ -34,61 +30,62 @@ export default function Home() {
           <Link href={"#"} className="underline">View all products</Link>
         </div>
 
-        <div className="max-h-max py-5 flex flex-wrap md:gap-0 gap-8 justify-between cursor-grab">
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md">
-            <Image src={"/categories/Apple.png"} alt={"1"} height={50} width={200} className="hover:scale-105 duration-200 transition-transform"/>
-            <div className="text-start w-full flex flex-col gap-3 mt-4">
+        <div className="max-h-max py-5 flex flex-wrap md:gap-0 gap-8 justify-between cursor-grab text-black">
+          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+            <img src={"/categories/Apple.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
+            <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹110.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Apples</h4>
               <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
-              <h4 className="text-slate-900 text-sm">per KG</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
+              <h4 className="text-sm">per KG</h4>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md">
-            <Image src={"/categories/Banana.png"} alt={"1"} height={50} width={200} className="hover:scale-105 duration-200 transition-transform py-4"/>
-            <div className="text-start w-full flex flex-col gap-3 mt-4">
-              <h6 className="md:text-lg text-xs font-light">₹9.00</h6>
-              <h4 className="font-semibold md:text-2xl text-base ">Banana</h4>
-              <p className="text-xs">⭐⭐⭐⭐⭐ (14) </p>
-              <h4 className="text-slate-900 text-sm">per Piece</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5 md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
-            </div>
-          </Link>
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md">
-            <Image src={"/categories/Watermelon.png"} alt={"1"} height={50} width={200} className="hover:scale-105 duration-200 transition-transform"/>
-            <div className="text-start w-full flex flex-col gap-3 mt-4">
-              <h6 className="md:text-lg text-xs font-light">₹25.00</h6>
-              <h4 className="font-semibold md:text-2xl text-base ">Watermelon</h4>
-              <p className="text-xs">⭐⭐⭐⭐ (45) </p>
-              <h4 className="text-slate-900 text-sm">Whole fruit</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5 md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
-            </div>
-          </Link>
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md">
-            <Image src={"/categories/Maggi.png"} alt={"1"} height={50} width={80} className="hover:scale-105 duration-200 transition-transform"/>
-            <div className="text-start w-full flex flex-col gap-3 mt-4">
+          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+            <img src={"/categories/Banana.png"} alt={"2"}  className="hover:scale-105 duration-200 transition-transform scale-95 py-6"/>
+            <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹50.00</h6>
-              <h4 className="font-semibold md:text-2xl text-base ">Power Breakfast</h4>
-              <p className="text-xs">⭐⭐⭐⭐⭐ (64) </p>
-              <h4 className="text-slate-900 text-sm">per Packet</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5 md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
+              <h4 className="font-semibold md:text-2xl text-base ">Banana</h4>
+              <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
+              <h4 className="text-sm">per Dozen</h4>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
             </div>
           </Link>
+          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+            <img src={"/categories/Watermelon.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
+            <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
+              <h6 className="md:text-lg text-xs font-light">₹70.00</h6>
+              <h4 className="font-semibold md:text-2xl text-base ">Watermelon</h4>
+              <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
+              <h4 className="text-sm">per piece</h4>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
+            </div>
+          </Link>
+          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+            <img src={"/categories/maggi.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
+            <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
+              <h6 className="md:text-lg text-xs font-light">₹100.00</h6>
+              <h4 className="font-semibold md:text-2xl text-base ">Maggi</h4>
+              <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
+              <h4 className="text-sm">per Packet</h4>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
+            </div>
+          </Link>
+                    
         </div>
       </section>
 
       {/* Section 3 */}
-      <h4 className="md:text-2xl text-xl my-4 px-4 md:px-8">Shop fresh food</h4>
-      <section className="md:px-8 px-4 flex flex-wrap">
+      <h4 className="md:text-3xl text-xl my-4 mt-20 px-4 md:px-8">Shop fresh food</h4>
+      <section className="md:px-8 px-4 flex flex-wrap dark:text-black">
         {/* LEFT */}
         <div className="md:w-2/4 max-w-full">
           <img src="fresh_food.png" alt="food" className="max-h-full w-screen md:rounded-l-3xl md:rounded-tr-none rounded-t-3xl" />
         </div>    
         {/* RIGHT */}
-        <div className="md:w-2/4 w-full border bg-gray-100 rounded-b-3xl md:rounded-r-3xl md:rounded-l-none">
+        <div className="md:w-2/4 w-full dark:bg-gray-800  bg-gray-100 rounded-b-3xl md:rounded-r-3xl md:rounded-l-none">
           <div className="flex justify-center items-center md:h-full gap-4 py-8">
-            <Link href={"#"} className="max-h-max md:max-w-80 max-w-24 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white">
+            <Link href={"#"} className="max-h-max md:max-w-80 max-w-24 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-slate-500 dark:border-white">
               <img src={"/categories/fruit-salad.png"} alt={"1"} className="h-32 w-32 size-2 hover:scale-105 duration-200 transition-transform"/>
               <div className="text-start w-full flex flex-col gap-3 mt-4">
                 <h6 className="md:text-lg text-xs font-light">From ₹80.00</h6>
@@ -97,7 +94,7 @@ export default function Home() {
                 <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
               </div>
             </Link>
-            <Link href={"#"} className="max-h-max md:max-w-80 max-w-24 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white">
+            <Link href={"#"} className="max-h-max md:max-w-80 max-w-24 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-slate-500 dark:border-white">
             <img src={"/categories/veg-salads.png"} alt={"1"} className="h-32 w-32 size-2 hover:scale-105 duration-200 transition-transform"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4">
               <h6 className="md:text-lg text-xs font-light">From ₹100.00</h6>
@@ -239,7 +236,7 @@ export default function Home() {
         <div className="flex w-full justify-between flex-wrap gap-4 md:mb-0 mb-20">
           {/* left */}
           <div id="section-box" className="max-h-svh w-full cursor-grab">
-            <img src="categories/maggi.png" alt="maggi" className="h-full w-full px-20 py-8"/>
+            <img src="categories/maggi.png" alt="maggi" className="h-full w-full md:px-20 md:py-8"/>
           </div>
           {/* right */}
           <div id="section-box" className="max-h-svh w-full flex flex-col gap-6 py-5 md:pl-3 px-3 md:pr-32">
@@ -276,7 +273,7 @@ export default function Home() {
       </section>
 
       {/* section 10 */}
-      <section className="max-h-max w-screen bg-slate-200 mt-80 md:mt-20">
+      <section className="max-h-max w-screen bg-slate-200 mt-80 md:mt-20 text-black">
         <div className="flex items-center lg:flex-row flex-col-reverse h-full w-full">
           <div className="md:w-2/4 w-full h-full md:px-14 px-7 py-10">
             <h4 className="text-lg pb-6">Up to 50% discount</h4>
@@ -364,7 +361,7 @@ export default function Home() {
       </section>
 
       {/* section 13 */}
-      <section className="w-screen h-lvh flex flex-col gap-3 justify-center items-center bg-blue-100">
+      <section className="w-screen h-lvh flex flex-col gap-3 justify-center items-center text-black bg-blue-100">
         <h1 className="text-xl md:text-3xl">ORGANIC & FRESH ALWAYS</h1>
         <h3 className="text-base md:text-xl">We are proud of it</h3>
         <div className="group relative">
@@ -437,7 +434,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <button className="rounded-full px-10 py-3 text-white bg-gray-900 hover:bg-black ">Register</button>
+              <button className="rounded-full px-10 py-3 text-white bg-gray-900 hover:bg-black dark:hover:border-white">Register</button>
             </div>            
           </div>
           <div className="px-5 py-3 flex gap-3 flex-wrap justify-between items-center w-full border-b">
@@ -449,7 +446,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <button className="rounded-full px-10 py-3 text-white bg-gray-900 hover:bg-black ">Register</button>
+              <button className="rounded-full px-10 py-3 text-white bg-gray-900 hover:bg-black dark:hover:border-white">Register</button>
             </div>            
           </div>
           <div className="px-5 py-3 flex gap-3 flex-wrap justify-between items-center w-full">
@@ -461,7 +458,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <button className="rounded-full px-10 py-3 text-white bg-gray-900 hover:bg-black ">Register</button>
+              <button className="rounded-full px-10 py-3 text-white bg-gray-900 hover:bg-black dark:border-white">Register</button>
             </div>            
           </div>
         </div>
@@ -473,8 +470,8 @@ export default function Home() {
           <h3 className="font-semibold text-2xl">Testimonials</h3>
           <h5 className="font-light text-lg">What our clients say</h5>
         </div>
-        <div className="rounded-lg bg-slate-400 flex justify-center items-center flex-col py-8 w-full cursor-grab gap-6">
-          <div className="flex flex-row gap-4 items-center justify-center ">
+        <div className="rounded-lg bg-slate-400 flex justify-center items-center flex-col py-8 w-full cursor-grab gap-6 text-black">
+          <div className="flex flex-row gap-4 items-center justify-center">
             <div className=""><FaRegUserCircle size={60}/></div>
             <div className="w-full flex flex-col">
               <h2>R Sharma</h2>
@@ -484,9 +481,6 @@ export default function Home() {
           <p className="text-2xl italic md:px-72 px-8 py-4 text-center">Great products. Always fresh, eco stuff that i cant find anywhere else in the city. I would not imagine my daily life without them!</p>
         </div>
       </section>
-
-      <Footer />
-
     </div>
   );
 }

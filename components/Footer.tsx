@@ -7,11 +7,11 @@ import { FaChevronDown, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
-    return <div>
+    return <div className="dark:text-white">
         {/* NEWSLETTER */}
         <section className="md:px-8 px-4 py-8 mt-4 mb-6">
             <div className="rounded-xl py-4 bg-black w-full h-96 flex gap-5 justify-center items-center flex-col dark:bg-gray-900 text-white">
-            <BsCursor  size={50} className="dark:text-black"/>
+            <BsCursor  size={50} className="text-white"/>
             <h2 className="text-3xl font-semibold text-center">Sign up for our newsletter</h2>
             <div className="flex md:w-1/2 w-full justify-center">
                 <input type="email" placeholder="Enter your email" className="p-3 md:text-lg text-xs bg-transparent border-2 border-white rounded-l-lg"/>
@@ -24,7 +24,7 @@ export default function Footer() {
         <MyMarquee content={"text"}/>
         
         {/* Footer */}
-        <section className="max-h-max w-full border-t border-b my-3 md:px-8 px-2 text-black">
+        <section className="max-h-max w-full border-t border-b my-3 md:px-8 px-2 py-8 dark:text-white text-black">
             <div className="flex items-start justify-between flex-wrap">
                 <div className="md:w-1/5 w-full p-4 flex flex-col gap-5">
                     <h4 className="text-2xl font-semibold">LOCAL</h4>
