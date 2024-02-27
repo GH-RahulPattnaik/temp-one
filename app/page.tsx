@@ -1,19 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import Link from "next/link";
 import { FaMinus, FaPlus, FaRegUserCircle } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 
 export default function Home() {
 
-  // const images = [
-  //   '/image01.png',
-  //   '/image02.png',
-  // ];
   return (
-    <div className="dark:text-white">
+    <div className="dark:text-white text-black">
       {/* Section - 1  */}
-      {/* <div className="container mx-auto"><AutoSwipeImages images={images} /></div> */}
       <section className="md:h-full h-lvh w-full relative -z-0 flex flex-col justify-center items-center dark:text-black">
         <img src="/s1/image01.png" alt="image 01" className="w-full md:h-full h-lvh" />
         <div className="flex flex-col items-center justify-center gap-10 absolute z-0 top-40">
@@ -31,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="max-h-max py-5 flex flex-wrap md:gap-0 gap-8 justify-between cursor-grab text-black">
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
             <img src={"/categories/Apple.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹110.00</h6>
@@ -41,7 +35,7 @@ export default function Home() {
               <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
             <img src={"/categories/Banana.png"} alt={"2"}  className="hover:scale-105 duration-200 transition-transform scale-95 py-6"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹50.00</h6>
@@ -51,7 +45,7 @@ export default function Home() {
               <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
             <img src={"/categories/Watermelon.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹70.00</h6>
@@ -61,7 +55,7 @@ export default function Home() {
               <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-96 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
             <img src={"/categories/maggi.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹100.00</h6>
@@ -77,30 +71,30 @@ export default function Home() {
 
       {/* Section 3 */}
       <h4 className="md:text-3xl text-xl my-4 mt-20 px-4 md:px-8">Shop fresh food</h4>
-      <section className="md:px-8 px-4 flex flex-wrap dark:text-black">
+      <section className="md:px-8 px-4 flex flex-wrap dark:text-white">
         {/* LEFT */}
         <div className="md:w-2/4 max-w-full">
           <img src="fresh_food.png" alt="food" className="max-h-full w-screen md:rounded-l-3xl md:rounded-tr-none rounded-t-3xl" />
         </div>    
         {/* RIGHT */}
-        <div className="md:w-2/4 w-full dark:bg-gray-800  bg-gray-100 rounded-b-3xl md:rounded-r-3xl md:rounded-l-none">
+        <div className="md:w-2/4 w-full dark:bg-zinc-900  bg-gray-100 rounded-b-3xl md:rounded-r-3xl md:rounded-l-none">
           <div className="flex justify-center items-center md:h-full gap-4 py-8">
-            <Link href={"#"} className="max-h-max md:max-w-80 max-w-24 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-slate-500 dark:border-white">
+            <Link href={"#"} className="max-h-max md:max-w-80 max-w-28 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-zinc-600 dark:border-white">
               <img src={"/categories/fruit-salad.png"} alt={"1"} className="h-32 w-32 size-2 hover:scale-105 duration-200 transition-transform"/>
               <div className="text-start w-full flex flex-col gap-3 mt-4">
                 <h6 className="md:text-lg text-xs font-light">From ₹80.00</h6>
                 <h4 className="font-semibold md:text-2xl text-base ">Fruits Salad</h4>
                 <p className="text-xs">⭐⭐⭐⭐ (5) </p>
-                <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
+                <button className="flex justify-center md:text-base text-sm md:px-5 px-2 md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black dark:border-white dark:bg-zinc-800 dark:text-white">Buy Now </button>
               </div>
             </Link>
-            <Link href={"#"} className="max-h-max md:max-w-80 max-w-24 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-slate-500 dark:border-white">
+            <Link href={"#"} className="max-h-max md:max-w-80 max-w-28 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-zinc-600 dark:border-white">
             <img src={"/categories/veg-salads.png"} alt={"1"} className="h-32 w-32 size-2 hover:scale-105 duration-200 transition-transform"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4">
               <h6 className="md:text-lg text-xs font-light">From ₹100.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Veg Salads</h4>
               <p className="text-xs">⭐⭐⭐⭐ (4) </p>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black">Buy Now </button>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black dark:border-white dark:bg-zinc-800 dark:text-white">Buy Now </button>
             </div>
           </Link>
           </div>
@@ -116,7 +110,7 @@ export default function Home() {
             <div className="absolute flex flex-col justify-center items-center bottom-0">
               <h2>Fresh Everyday</h2>
               <h4 className="py-5 text-2xl">Finest Bread</h4>
-              <Link href={"#"} className="w-full px-20 py-2 mb-4 hover:bg-black hover:text-white border border-black rounded-full">Show more</Link>
+              <Link href={"#"} className="w-full px-20 py-2 mb-4 hover:bg-black hover:text-white border dark:border-white border-black rounded-full">Show more</Link>
             </div>
           </div>
           <div className="md:w-1/4 w-full max-h-max border flex justify-center relative rounded-2xl">
@@ -124,7 +118,7 @@ export default function Home() {
             <div className="absolute flex flex-col justify-center items-center bottom-0">
               <h2>Newly arrived!</h2>
               <h4 className="py-5 text-2xl">Masalas</h4>
-              <Link href={"#"} className="w-full px-20 py-2 mb-4 hover:bg-black hover:text-white border border-black rounded-full">Show more</Link>
+              <Link href={"#"} className="w-full px-20 py-2 mb-4 hover:bg-black hover:text-white border dark:border-white border-black rounded-full">Show more</Link>
             </div>
           </div>
           <div className="md:w-1/4 w-full max-h-max border flex justify-center relative rounded-2xl">
@@ -132,7 +126,7 @@ export default function Home() {
             <div className="absolute flex flex-col justify-center items-center bottom-0">
               <h2>Collection</h2>
               <h4 className="py-5 text-2xl">Pure Organic</h4>
-              <Link href={"#"} className="w-full px-20 py-2 mb-4 hover:bg-black hover:text-white border border-black rounded-full">Show more</Link>
+              <Link href={"#"} className="w-full px-20 py-2 mb-4 hover:bg-black hover:text-white border dark:border-white border-black rounded-full">Show more</Link>
             </div>
           </div>
         </div>
@@ -174,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* section 6 */}
-      <section className="mt-10 mb-14 max-h-svh w-screen bg-neutral-200 relative">
+      <section className="mt-10 mb-14 max-h-svh w-screen bg-neutral-200 relative text-black dark:border-white">
         <div className="flex flex-col items-center justify-center">
           <img src="categories/recipes.png" alt="recipes" className="max-h-96 relative top-0" /> 
           <h1 className="py-4 text-5xl text-center">Delicious Recipes</h1>      
@@ -210,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* section 8 */}
-      <section className="md:px-8 px-4 py-8 mt-8">
+      <section className="md:px-8 px-4 py-8 mt-8 text-black">
         <div className="flex w-full justify-between flex-wrap gap-4">
           <div id="section-box" className="w-full max-h-80 rounded-2xl relative">
             <img src="image1.png" alt="left-img" className="max-h-80 w-full  rounded-2xl"/>
@@ -248,8 +242,8 @@ export default function Home() {
             <p className="text-lg font-light">Maggi is made by a process similar to soy sauce, except with fermented wheat protein, so it has a deep, rich, and salty savoriness that cannot come from regular old salt and pepper. The best way to describe its actual flavor is “roasty.”</p>
             <h6 className="text-xl font-semibold">Style</h6>
             <div className="flex items-center gap-8">
-              <button className="focus:border-black border-2 px-5 py-2 rounded-full">Regular Pack</button>
-              <button className="focus:border-black border-2 px-5 py-2 rounded-full">Family Pack</button>
+              <button className="focus:border-black border-2 px-5 py-2 rounded-full text-xs">Regular Pack</button>
+              <button className="focus:border-black border-2 px-5 py-2 rounded-full text-xs">Family Pack</button>
             </div>
             <div className="flex items-center gap-3">
               <div className="text-6xl">₹10</div>
@@ -261,9 +255,9 @@ export default function Home() {
             <div className="border w-full h-1 "></div>
             <div className="flex gap-2 items-center justify-between flex-wrap">
               <div className="flex items-center gap-3 justify-between w-full md:w-4/12 pb-5">
-                <button className="border rounded-full p-4 border-black"><FaMinus size={15}/></button>
+                <button className="border rounded-full p-4 border-black dark:border-white hover:bg-zinc-700"><FaMinus size={15}/></button>
                 <p className="text-3xl">1</p>
-                <button className="border rounded-full p-4 border-black"><FaPlus size={15}/></button>
+                <button className="border rounded-full p-4 border-black dark:border-white hover:bg-zinc-700"><FaPlus size={15}/></button>
               </div>
               <button className="border border-black w-full md:w-3/12 bg-gray-900 hover:bg-black text-white text-lg rounded-full py-3 mb-3 ">Add to cart</button>
               <button className="border border-black w-full md:w-3/12 bg-white text-black hover:bg-black hover:text-white text-lg rounded-full py-3 mb-3 ">Buy it now</button>
@@ -376,22 +370,22 @@ export default function Home() {
           <div className="md:w-1/5 w-2/5 max-h-max flex flex-col items-center">
             <img src="about-delivery/local-pickup.png" alt="local-pickup" className="w-2/3 hover:scale-105 transition-all duration-500"/>
             <h4 className="text-xl font-medium text-center mt-4 hover:underline">Local Pickup</h4>
-            <p className="text-center py-2 text-gray-500 md:text-base text-sm">Get orders faster while avoiding shipping fees</p>
+            <p className="text-center py-2 md:text-base text-xs">Get orders faster while avoiding shipping fees</p>
           </div>
           <div className="md:w-1/5 w-2/5 max-h-max flex flex-col items-center">
             <img src="about-delivery/local-deliveries.png" alt="local-deliveries" className="w-2/3 hover:scale-105 transition-all duration-500"/>
             <h4 className="text-xl font-medium text-center mt-4 hover:underline">Local Delivery</h4>
-            <p className="text-center py-2 text-gray-500 md:text-base text-sm">100% curbside recyclable boxes </p>
+            <p className="text-center py-2 md:text-base text-xs">100% curbside recyclable boxes </p>
           </div>
           <div className="md:w-1/5 w-2/5 max-h-max flex flex-col items-center">
             <img src="about-delivery/eater.png" alt="eater" className="w-2/3 hover:scale-105 transition-all duration-500"/>
             <h4 className="text-xl font-medium text-center mt-4 hover:underline">For Conscious Eaters</h4>
-            <p className="text-center py-2 text-gray-500 md:text-base text-sm">We are supporting small farmers and producers</p>
+            <p className="text-center py-2 md:text-base text-xs">We are supporting small farmers and producers</p>
           </div>
           <div className="md:w-1/5 w-2/5 max-h-max flex flex-col items-center">
             <img src="about-delivery/new-food.png" alt="new-food" className="w-2/3 hover:scale-105 transition-all duration-500"/>
             <h4 className="text-xl font-medium text-center mt-4 hover:underline">Delicious & New Food</h4>
-            <p className="text-center py-2 text-gray-500 md:text-base text-sm">Feel great about what you eat</p>
+            <p className="text-center py-2 md:text-base text-xs">Feel great about what you eat</p>
           </div>
         </div>
       </section>
@@ -470,7 +464,7 @@ export default function Home() {
           <h3 className="font-semibold text-2xl">Testimonials</h3>
           <h5 className="font-light text-lg">What our clients say</h5>
         </div>
-        <div className="rounded-lg bg-slate-400 flex justify-center items-center flex-col py-8 w-full cursor-grab gap-6 text-black">
+        <div className="rounded-lg bg-zinc-900 flex justify-center items-center flex-col py-8 w-full cursor-grab gap-6 text-black dark:text-white">
           <div className="flex flex-row gap-4 items-center justify-center">
             <div className=""><FaRegUserCircle size={60}/></div>
             <div className="w-full flex flex-col">

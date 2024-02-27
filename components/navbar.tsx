@@ -9,7 +9,7 @@ import { IoPersonOutline } from "react-icons/io5";
 
 
 export default function Navbar() {
-    return <div className="dark:text-white">
+    return <div className="dark:text-white text-black dark:bg-zinc-900 bg-white">
 
         {/* NAVBAR */}
         <nav className="flex w-full px-8 py-7 items-center">
@@ -21,9 +21,10 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href={"/"} className="flex justify-center lg:w-fit w-full md:h-fit h-14">
-            <Image src={"/local_logo.png"} alt={"logo"} height={25} width={100}/>
+            <Image src={"/local_logo.png"} alt={"logo"} height={25} width={100} className="dark:hidden flex"/>
+            <Image src={"/local_logo_dark.png"} alt={"logo"} height={25} width={100} className="dark:flex hidden"/>
         </Link>
-
+        
         {/* Desktop View */}
         <div className="hidden lg:flex w-full justify-end gap-5">
             {/* SEARCH BAR */}
@@ -33,11 +34,11 @@ export default function Navbar() {
             </div>
 
             {/* BUTTONS */}
-            <Link href={"#"} className="border px-5 py-2 rounded-full hover:bg-black hover:text-white border-black flex items-center gap-4">
+            <Link href={"#"} className="border px-5 py-2 rounded-full hover:bg-black hover:text-white border-black flex items-center gap-4 dark:border-white">
             <IoPersonOutline size={24}/>
             <div>Account</div>
             </Link>
-            <Link href={"#"} className="border px-5 py-2 rounded-full bg-gray-900 hover:bg-black text-white border-black flex items-center gap-4">
+            <Link href={"#"} className="border px-5 py-2 rounded-full bg-gray-900 hover:bg-black text-white border-black flex items-center gap-4 dark:border-white">
             <FiShoppingCart size={24}/>
             <div>$0.00 (0)</div>
             </Link>
@@ -49,10 +50,10 @@ export default function Navbar() {
         </Link>
         </nav>
 
-        {/* Search Bar */}
-        <div className="md:hidden border mx-6 rounded-full text-black dark:text-white px-3 py-2 flex items-center gap-4 hover:border-black dark:hover:border-white">
-            <BiSearch size={24} className="text-gray-800"/>
-            <input type="text" placeholder="Search for..." />
+        {/* Mobile Search Bar */}
+        <div className="md:hidden border mx-6 rounded-full text-black dark:text-white px-5 py-2 flex items-center gap-4 hover:border-black dark:hover:border-white">
+            <div><BiSearch size={24} className="text-gray-800 dark:text-white "/></div>
+            <input type="text" placeholder="Search for..." className="bg-transparent"/>
         </div>
 
         <div className="border-b mt-5"></div>
@@ -128,21 +129,23 @@ export default function Navbar() {
                 <Link href={"#"} className="hover:underline">FAQ</Link>
             </div>
             
-            <div className='flex items-center justify-between w-full md:w-1/4'>
+            <div className='flex items-center justify-between gap-5 w-full md:w-1/4'>
                 {/* LEFT */}
-                <div className='flex py-5 gap-3 items-center'>
+                <div className='flex py-5 gap-2 items-center'>
                     <div>
-                        <Image src={'/shop.png'} alt={'Home-icon'} height={30} width={30}/>
+                        <Image src={'/shop.png'} alt={'Home-icon'} height={30} width={30} className="dark:hidden flex"/>
+                        <Image src={'/shop_dark.png'} alt={'Home-icon'} height={30} width={30} className="hidden dark:flex"/>
                     </div>
                     <div className='flex flex-col  justify-start'>
                         <div className='text-xs text-start'>Picking up?</div>
-                        <div className='text-start md:text-sm text-xs font-medium flex items-center md:gap-3 gap-1 hover:underline'>Select store <FaChevronDown size={18} className="size-3"/></div>
+                        <div className='text-start md:text-sm text-xs font-medium flex items-center md:gap-3 gap-0 hover:underline'>Select store <FaChevronDown size={18} className="size-3"/></div>
                     </div>
                 </div>
                 {/* RIGHT */}
                 <div className='flex py-5 gap-3 items-center'>
                     <div>
-                        <Image src={'/box.png'} alt={'Delivery-Box'} height={30} width={30}/>
+                        <Image src={'/box.png'} alt={'Delivery-Box'} height={30} width={30} className="dark:hidden flex"/>
+                        <Image src={'/box_dark.png'} alt={'Delivery-Box'} height={30} width={30} className="hidden dark:flex"/>
                     </div>
                     <div className='flex flex-col  justify-start'>
                         <div className='text-xs text-start'>Need delivery?</div>
