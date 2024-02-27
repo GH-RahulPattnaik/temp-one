@@ -25,44 +25,44 @@ export default function Home() {
         </div>
 
         <div className="max-h-max py-5 flex flex-wrap md:gap-0 gap-8 justify-between cursor-grab text-black">
-          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-black flex flex-col items-center rounded-md dark:bg-zinc-800 dark:text-white">
             <img src={"/categories/Apple.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹110.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Apples</h4>
               <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
               <h4 className="text-sm">per KG</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent dark:bg-zinc-700  dark:border-white dark:text-white">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-black flex flex-col items-center rounded-md dark:bg-zinc-800 dark:text-white">
             <img src={"/categories/Banana.png"} alt={"2"}  className="hover:scale-105 duration-200 transition-transform scale-95 py-6"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹50.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Banana</h4>
               <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
               <h4 className="text-sm">per Dozen</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent dark:bg-zinc-700  dark:border-white dark:text-white">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-black flex flex-col items-center rounded-md dark:bg-zinc-800 dark:text-white">
             <img src={"/categories/Watermelon.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹70.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Watermelon</h4>
               <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
               <h4 className="text-sm">per piece</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent dark:bg-zinc-700  dark:border-white dark:text-white">Buy Now </button>
             </div>
           </Link>
-          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-gray-900 flex flex-col items-center rounded-md dark:bg-zinc-700">
+          <Link href={"#"} className="max-h-max md:max-w-72 max-w-32 md:px-8 px-2 py-4 border border-black flex flex-col items-center rounded-md dark:bg-zinc-800 dark:text-white">
             <img src={"/categories/maggi.png"} alt={"1"}  className="hover:scale-105 duration-200 transition-transform scale-95"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4 h-1/2">
               <h6 className="md:text-lg text-xs font-light">₹100.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Maggi</h4>
               <p className="text-xs">⭐⭐⭐⭐⭐ (4) </p>
               <h4 className="text-sm">per Packet</h4>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent">Buy Now </button>
+              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 text-black hover:bg-black hover:text-white border rounded-full border-black bg-transparent dark:bg-zinc-700  dark:border-white dark:text-white">Buy Now </button>
             </div>
           </Link>
                     
@@ -79,22 +79,22 @@ export default function Home() {
         {/* RIGHT */}
         <div className="md:w-2/4 w-full dark:bg-zinc-900  bg-gray-100 rounded-b-3xl md:rounded-r-3xl md:rounded-l-none">
           <div className="flex justify-center items-center md:h-full gap-4 py-8">
-            <Link href={"#"} className="max-h-max md:max-w-80 max-w-28 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-zinc-600 dark:border-white">
+            <Link href={"#"} className="max-h-max md:max-w-80 max-w-28 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-zinc-700 dark:border-white">
               <img src={"/categories/fruit-salad.png"} alt={"1"} className="h-32 w-32 size-2 hover:scale-105 duration-200 transition-transform"/>
               <div className="text-start w-full flex flex-col gap-3 mt-4">
                 <h6 className="md:text-lg text-xs font-light">From ₹80.00</h6>
                 <h4 className="font-semibold md:text-2xl text-base ">Fruits Salad</h4>
                 <p className="text-xs">⭐⭐⭐⭐ (5) </p>
-                <button className="flex justify-center md:text-base text-sm md:px-5 px-2 md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black dark:border-white dark:bg-zinc-800 dark:text-white">Buy Now </button>
+                <button className="flex justify-center md:text-base text-sm md:px-7 px-2 md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black dark:border-white dark:bg-zinc-800 dark:text-white">Buy Now</button>
               </div>
             </Link>
-            <Link href={"#"} className="max-h-max md:max-w-80 max-w-28 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-zinc-600 dark:border-white">
+            <Link href={"#"} className="max-h-max md:max-w-80 max-w-28 md:px-8 px-2 py-4 border flex flex-col items-center rounded-md bg-white dark:bg-zinc-700 dark:border-white">
             <img src={"/categories/veg-salads.png"} alt={"1"} className="h-32 w-32 size-2 hover:scale-105 duration-200 transition-transform"/>
             <div className="text-start w-full flex flex-col gap-3 mt-4">
               <h6 className="md:text-lg text-xs font-light">From ₹100.00</h6>
               <h4 className="font-semibold md:text-2xl text-base ">Veg Salads</h4>
               <p className="text-xs">⭐⭐⭐⭐ (4) </p>
-              <button className="flex justify-center md:text-base text-sm md:px-5  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black dark:border-white dark:bg-zinc-800 dark:text-white">Buy Now </button>
+              <button className="flex justify-center md:text-base text-sm md:px-7  md:py-3 py-1 bg-white text-black hover:bg-black hover:text-white border rounded-full border-black dark:border-white dark:bg-zinc-800 dark:text-white">Buy Now</button>
             </div>
           </Link>
           </div>
@@ -140,27 +140,27 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-evenly  gap-6">
           <div className="md:flex hidden flex-col items-center border rounded-xl p-2">
-            <img src="categories/bread.png" alt="breads" className="mb-10 h-36 w-36 rounded-3xl transition-all duration-500 hover:scale-110" />
+            <img src="categories/bread.png" alt="breads" className="mb-10 h-36 w-36 rounded-xl transition-all duration-500 hover:scale-110" />
             <h3 className="mb-4 text-center hover:underline">Bread & Bakery</h3>
           </div>
           <div className="md:flex flex-col items-center border rounded-xl p-2">
-            <img src="categories/mix-fruits.png" alt="mix-fruits" className="mb-10 h-36 w-36 rounded-3xl transition-all duration-500 hover:scale-110" />
+            <img src="categories/mix-fruits.png" alt="mix-fruits" className="mb-10 h-36 w-36 rounded-xl transition-all duration-500 hover:scale-110" />
             <h3 className="mb-4 text-center hover:underline">Fruits</h3>
           </div>
           <div className="md:flex flex-col items-center border rounded-xl p-2">
-            <img src="categories/vegetables.png" alt="vegetables" className="mb-10 h-36 w-36 rounded-3xl transition-all duration-500 hover:scale-110" />
+            <img src="categories/vegetables.png" alt="vegetables" className="mb-10 h-36 w-36 rounded-xl transition-all duration-500 hover:scale-110" />
             <h3 className="mb-4 text-center hover:underline">Vegetables</h3>
           </div>
           <div className="md:flex hidden flex-col items-center border rounded-xl p-2">
-            <img src="categories/maggi.png" alt="maggi" className="mb-10 h-36 w-36 rounded-3xl transition-all duration-500 hover:scale-110" />
+            <img src="categories/maggi.png" alt="maggi" className="mb-10 h-36 w-36 rounded-xl transition-all duration-500 hover:scale-110" />
             <h3 className="mb-4 text-center hover:underline">Noodles</h3>
           </div>
           <div className="md:flex hidden flex-col items-center border rounded-xl p-2">
-            <img src="categories/Masalas.png" alt="Masalas" className="mb-10 h-36 w-36 rounded-3xl transition-all duration-500 hover:scale-110" />
+            <img src="categories/Masalas.png" alt="Masalas" className="mb-10 h-36 w-36 rounded-xl transition-all duration-500 hover:scale-110" />
             <h3 className="mb-4 text-center hover:underline">Masalas</h3>
           </div>
           <div className="md:flex hidden flex-col items-center border rounded-xl p-2">
-            <img src="categories/flour.png" alt="flour" className="mb-10 h-36 w-36 rounded-3xl transition-all duration-500 hover:scale-110" />
+            <img src="categories/flour.png" alt="flour" className="mb-10 h-36 w-36 rounded-xl transition-all duration-500 hover:scale-110" />
             <h3 className="mb-4 text-center hover:underline">Powder</h3>
           </div> 
         </div>
