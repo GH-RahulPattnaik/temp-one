@@ -464,7 +464,7 @@ export default function Home() {
           <h3 className="font-semibold text-2xl">Testimonials</h3>
           <h5 className="font-light text-lg">What our clients say</h5>
         </div>
-        <div className="rounded-lg bg-zinc-900 flex justify-center items-center flex-col py-8 w-full cursor-grab gap-6 text-black dark:text-white">
+        <div className="rounded-lg bg-zinc-900 flex justify-center items-center flex-col py-8 w-full cursor-grab gap-6 text-white">
           <div className="flex flex-row gap-4 items-center justify-center">
             <div className=""><FaRegUserCircle size={60}/></div>
             <div className="w-full flex flex-col">

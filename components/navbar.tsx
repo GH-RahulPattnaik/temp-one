@@ -12,7 +12,7 @@ export default function Navbar() {
     return <div className="dark:text-white text-black dark:bg-zinc-900 bg-white">
 
         {/* NAVBAR */}
-        <nav className="flex w-full px-8 py-7 items-center">
+        <nav className="flex w-full md:px-8 px-5 py-7 items-center">
 
         {/* Mobile view */}
         <div className="dark:text-white transition-transform duration-1000 z-20">
@@ -27,9 +27,10 @@ export default function Navbar() {
         
         {/* Desktop View */}
         <div className="hidden lg:flex w-full justify-end gap-5">
+
             {/* SEARCH BAR */}
             <div className="border w-7/12 rounded-full text-black dark:text-white px-5 py-2 flex items-center gap-4 hover:border-black dark:hover:border-white">
-            <BiSearch size={24} className="text-gray-800"/>
+            <BiSearch size={24} className="text-gray-800 dark:text-white"/>
             <input type="text" placeholder="Search for..." className="bg-transparent" />
             </div>
 
@@ -51,14 +52,14 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile Search Bar */}
-        <div className="md:hidden border mx-6 rounded-full text-black dark:text-white px-5 py-2 flex items-center gap-4 hover:border-black dark:hover:border-white">
+        <div className="md:hidden border mx-4 rounded-full text-black dark:text-white px-5 py-2 flex items-center gap-4 hover:border-black dark:hover:border-white">
             <div><BiSearch size={24} className="text-gray-800 dark:text-white "/></div>
             <input type="text" placeholder="Search for..." className="bg-transparent"/>
         </div>
 
         <div className="border-b mt-5"></div>
 
-        <div className="flex items-center w-full px-8 shadow-xl">
+        <div className="flex items-center w-full px-4 md:px-8 shadow-xl">
 
             <div className="w-3/4 hidden md:flex items-center gap-9 transition-all duration-1000">
                 <Link href={"#"} className="flex group gap-3 items-center transition-all relative z-10">
@@ -138,7 +139,7 @@ export default function Navbar() {
                     </div>
                     <div className='flex flex-col  justify-start'>
                         <div className='text-xs text-start'>Picking up?</div>
-                        <div className='text-start md:text-sm text-xs font-medium flex items-center md:gap-3 gap-0 hover:underline'>Select store <FaChevronDown size={18} className="size-3"/></div>
+                        <div className='text-start md:text-sm text-xs font-medium flex items-center md:gap-3 gap-2 hover:underline'>Select store <FaChevronDown size={18} className="size-3"/></div>
                     </div>
                 </div>
                 {/* RIGHT */}
