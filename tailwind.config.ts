@@ -8,6 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: {
+          DEFAULT: "#2F5233",
+          dark: "#1E3A22",
+          light: "#4C7A50",
+        },
+        cream: "#FBF8F1",
+        clay: "#E8622C",
+      },
+      fontFamily: {
+        display: ["var(--font-fraunces)", "serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+      },
+      maxWidth: {
+        container: "1280px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,4 +33,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
